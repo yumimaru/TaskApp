@@ -29,8 +29,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let realm = try! Realm()
-    taskArray = realm.objects(Task.self)
+   // let realm = try! Realm() //クラス変数出持っているので不要
+   // taskArray = realm.objects(Task.self) //最初は値が入っているので不要
     searhBarData.delegate = self
     //Outletで接続したtableViewのdelegateとdataSourceにselfを指定
     //selfとはViewControllerのこと。delegateは委譲
